@@ -206,8 +206,7 @@ export function Pricing() {
             Flat pricing, no management fees.
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-            Whether you’re one person trying to get ahead or a big firm trying
-            to take over the world, we’ve got a plan for you.
+          Whether you're a dedicated contractor safeguarding communities or a forward-thinking government agency focused on proactive fire management, our tailored funding options support your efforts in preventing and managing wildfires effectively.
           </p>
         </div>
 
