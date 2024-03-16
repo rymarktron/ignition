@@ -10,63 +10,60 @@ import { Logomark } from '@/components/Logo'
 
 const plans = [
   {
-    name: 'Starter',
+    name: 'Basic',
     featured: false,
-    price: { Monthly: '$0', Annually: '$0' },
+    price: { Monthly: '$10', Annually: '$100' },
     description:
-      'You’re new to investing but want to do it right. Get started for free.',
+      'Entry-level plan for small-scale usage.',
     button: {
       label: 'Get started for free',
       href: '/register',
     },
     features: [
-      'Commission-free trading',
-      'Multi-layered encryption',
-      'One tip every day',
-      'Invest up to $1,500 each month',
+      'Access to basic fire detection algorithm',
+      'Limited number of images processed per month',
+      'Email support'
     ],
     logomarkClassName: 'fill-gray-300',
   },
   {
-    name: 'Investor',
+    name: 'Professional',
     featured: false,
-    price: { Monthly: '$7', Annually: '$70' },
+    price: { Monthly: '$25', Annually: '$250' },
     description:
-      'You’ve been investing for a while. Invest more and grow your wealth faster.',
+      'For moderate usage with additional features.',
     button: {
       label: 'Subscribe',
       href: '/register',
     },
     features: [
-      'Commission-free trading',
-      'Multi-layered encryption',
-      'One tip every hour',
-      'Invest up to $15,000 each month',
-      'Basic transaction anonymization',
+      'Access to advanced fire detection algorithms',
+      'Higher number of images processed per month',
+      'Priority email support',
+      'Customizable alerts and notifications'
     ],
     logomarkClassName: 'fill-gray-500',
   },
   {
-    name: 'VIP',
+    name: 'Enterprise',
     featured: true,
-    price: { Monthly: '$199', Annually: '$1,990' },
+    price: { Monthly: '$75', Annually: '$750' },
     description:
-      'You’ve got a huge amount of assets but it’s not enough. To the moon.',
+      'For large-scale usage with premium features and support.',
     button: {
       label: 'Subscribe',
       href: '/register',
     },
     features: [
-      'Commission-free trading',
-      'Multi-layered encryption',
-      'Real-time tip notifications',
-      'No investment limits',
-      'Advanced transaction anonymization',
-      'Automated tax-loss harvesting',
+      'Access to premium fire detection algorithms',
+      'Unlimited images processed per month',
+      '24/7 dedicated customer support',
+      'Integration with existing systems',
+      'Advanced analytics and reporting'
     ],
     logomarkClassName: 'fill-green-500',
   },
-]
+];
 
 function CheckIcon(props) {
   return (
