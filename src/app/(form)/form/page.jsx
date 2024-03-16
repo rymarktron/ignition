@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link'
 import { motion, useInView, useMotionValue } from 'framer-motion'
 import { AuthLayout } from '@/components/AuthLayout'
-
+import { Button } from '@/components/Button'
 
 import { useHistory } from 'react-router-dom';
 
@@ -64,9 +64,9 @@ function ContactForm() {
       <div>  </div>
 
 
-      <button href = "/load" type="submit" color="green" className="mt-8 w-full">
+      <Button href = "../waterbottle" type="submit" color="green" className="mt-8 w-full">
           Submit
-        </button>
+        </Button>
 
 
       </form>
