@@ -39,7 +39,7 @@ export default function Login() {
             required
           />
         </div>
-        <Button type="submit" color="green" className="mt-8 w-full">
+        <Button href = "/form" type="submit" color="green" className="mt-8 w-full">
           Sign in to account
         </Button>
       </form>
