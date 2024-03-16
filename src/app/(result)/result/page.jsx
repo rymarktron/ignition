@@ -70,6 +70,18 @@ export default function ResultPage() {
           <Image src={aerial} alt="Aerial Photo" />
         </div>
 
+        <h1>Recommendations for Wildfire Prevention in Boreal Forest Ecosystems:</h1>
+          <p>1. <strong>Understanding Natural Fire Dynamics:</strong> Acknowledge the inherent role of fire in boreal forests, contributing to forest renewal. Consider managing fires by allowing them to burn under controlled circumstances.</p>
+          <p>2. <strong>Establishing Fire Mitigation Barriers:</strong> Utilize natural features like rocky outcrops and water bodies to create fire breaks. Additional fire breaks can be established by strategically clearing vegetation.</p>
+          <p>3. <strong>Enhanced Monitoring and Early Warning Systems:</strong> Set up a comprehensive detection system employing lookout towers, satellite surveillance, and regular patrols to identify fires at their inception.</p>
+          <p>4. <strong>Ensuring Preparedness and Rapid Response:</strong> Maintain a highly prepared response system with well-trained firefighting teams and swiftly deployable equipment to combat fire outbreaks effectively.</p>
+          <p>5. <strong>Reducing Fuel Availability:</strong> Focus on reducing potential fuel sources in proximity to human infrastructure through controlled burns or mechanical removal of combustible materials like underbrush and dead trees.</p>
+          <p>6. <strong>Public Awareness and Education Campaigns:</strong> Educate residents and visitors about fire risks and safety protocols, covering guidelines for campfires, burning regulations, and proper disposal of hazardous materials such as cigarettes.</p>
+          <p>7. <strong>Securing Critical Infrastructure:</strong> Implement protective measures for vital infrastructure, including the use of fire-resistant materials, construction techniques, and ensuring separation from flammable materials.</p>
+          <p>8. <strong>Collaborative Community Fire Preparedness Plans:</strong> Collaborate closely with local communities to develop robust fire plans encompassing evacuation routes, communication strategies, and community-led firebreak initiatives.</p>
+          <p>9. <strong>Legislation Compliance and Enforcement:</strong> Enforce existing fire prevention laws rigorously, including the imposition of fire bans during periods of heightened risk to prevent potential disasters.</p>
+          <p>10. <strong>Supporting Research and Adaptive Management:</strong> Invest in research initiatives to deepen our understanding of fire behavior in boreal forests and adapt management strategies accordingly to address evolving environmental challenges such as climate change.</p>
+
         {/* Present content */}
         <ul
           role="list"

@@ -10,9 +10,6 @@ import { useHistory } from 'react-router-dom';
 function ContactForm() {  
   return (
     <div className="max-w-md mx-auto bg-white rounded-md shadow-md p-8">
-      <Link href="/" aria-label="Home">
-          <Logo className="mx-auto h-14 w-auto" />
-        </Link>
       <h2 className="text-2xl font-bold mb-4 mt-10">Form</h2>
       
       <form>
@@ -70,7 +67,7 @@ function ContactForm() {
       <div>  </div>
 
 
-      <button href = "/load" type="submit" color="green" className="mt-8 w-full">
+      <button href = "/result" type="submit" color="green" className="mt-8 w-full">
           Submit
         </button>
 
