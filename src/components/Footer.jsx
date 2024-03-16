@@ -30,7 +30,7 @@ export function Footer() {
             <Image src={logoSvg} className="h-10 w-10 flex-none fill-cyan-500" alt="Logo" />
             <div className="ml-4">
                 <p className="text-base font-semibold">Ignition</p>
-                <p className="mt-1 text-sm">Saving one forest at a time.</p>
+                <p className="mt-1 text-sm">Empowering fire prevention, one blaze at a time..</p>
               </div>
             </div>
             <nav className="mt-11 flex gap-8">
