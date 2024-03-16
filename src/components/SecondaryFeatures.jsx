@@ -1,8 +1,13 @@
 import { Container } from '@/components/Container'
 import qrCode from '@/images/qr-code.svg'
+import weatherIcon from '@/images/icons/weather.png'
+import treeTypesIcon from '@/images/icons/ecology.png'
+import topographyIcon from '@/images/icons/location@3x.png'
+import windSpeedIcon from '@/images/icons/wind.png'
+import Image from 'next/image'
 
 const parameters = [
-  /*{
+  {
     name: 'Wind Speed',
     description:
       'Assess wind speed to determine the direction and intensity of the fire spread.',
@@ -13,18 +18,18 @@ const parameters = [
     description:
       'Identify tree species in the area to understand fuel characteristics and fire behavior.',
     icon: treeTypesIcon,
-  },*/
+  },
     {
       name: 'Topography',
       description:
         'Analyze the landscape to predict fire behavior based on terrain and slope.',
-      icon: <TopographyIcon />,
+      icon: topographyIcon,
     },
     {
       name: 'Weather Conditions',
       description:
         'Monitor weather conditions such as temperature and humidity to assess fire risk.',
-      icon: <WeatherConditionsIcon />,
+      icon: weatherIcon,
     },
   /*
   {
@@ -83,11 +88,11 @@ export function SecondaryFeatures() {
               key={parameter.name}
               className="rounded-2xl border border-gray-200 p-8"
             >
-            <svg
-              className="h-8 w-8"
-              alt={parameter.name}
-              dangerouslySetInnerHTML={{ __html: parameter.icon }}
-            />
+            <Image
+                className="h-12 w-12 rounded-full"
+                alt={parameter.name}
+                src={parameter.icon}
+              />
               <h3 className="mt-6 font-semibold text-gray-900">
                 {parameter.name}
               </h3>
