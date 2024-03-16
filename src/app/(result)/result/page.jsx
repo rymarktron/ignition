@@ -1,4 +1,8 @@
-import { Container } from '@/components/Container'
+import { Container } from '@/components/Container';
+import { Logo } from '@/components/Logo';
+import Link from 'next/link';
+import Image from 'next/image';
+import aerial from '@/images/image.png';
 
 const resultData = [
   [
@@ -39,7 +43,7 @@ const resultData = [
       answer: "Our technology stack includes state-of-the-art AI algorithms, computer vision models, and geospatial data processing tools. We follow an agile development approach, continually iterating on our software based on user feedback and emerging research. Our roadmap includes enhancing the usability and scalability of our platform, as well as integrating new features to address evolving wildfire management challenges."
     },
   ],
-]
+];
 
 export default function ResultPage() {
   return (
@@ -48,6 +52,9 @@ export default function ResultPage() {
       aria-labelledby="faqs-title"
       className="border-t border-gray-200 py-20 sm:py-32 bg-green-100"
     >
+      <Link href="/" aria-label="Home">
+        <Logo className="h-10 w-auto" />
+      </Link>
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2
@@ -57,23 +64,13 @@ export default function ResultPage() {
             Results
           </h2>
         </div>
-        <
 
-        <h2>These ecosystems are characterized by ancient trees, a multi-layered canopy, high levels of precipitation, and a rich undergrowth of ferns and other moisture-loving plants.
-Preventative fire procedures for an old-growth temperate rainforest include:
+        {/* Display aerial photo */}
+        <div className="mx-auto max-w-2xl">
+          <Image src={aerial} alt="Aerial Photo" />
+        </div>
 
-
-Minimal Intervention: Because of the high moisture content and natural fire resistance, these ecosystems typically require less active management for fire prevention compared to drier forests.
-Protection of Key Areas: Protecting the oldest and most ecologically significant trees, which can sometimes be done by clearing underbrush and smaller trees in the immediate vicinity to reduce potential fuel.
-Monitoring Human Activity: Limiting and monitoring human activities that can cause fires, such as campfires, smoking, and use of machinery that can create sparks.
-Infrastructure Readiness: Even though fires are less common, having infrastructure in place for fire detection and suppression is essential. This can include lookout towers, trained personnel, and firefighting equipment.
-Public Education: Educating the public on the importance of these ecosystems and how to prevent wildfires through responsible behavior.
-Scientific Management: Collaborating with ecologists and forest managers to conduct scientific assessments that can help in understanding the natural fire cycles of these forests, if any, and adapting management practices accordingly.
-Policy and Regulation Enforcement: Enforcing policies and regulations designed to protect these environments, including restrictions on logging and development that can alter the natural fire defenses of the forest.
-Emergency Plans: Developing and maintaining emergency plans and evacuation routes for areas adjacent to these forests.
-It's important to note that old-growth forests have a unique ecological balance that has been established over centuries or millennia. Fire prevention and intervention should be carefully considered and based on ecological best practices to avoid disrupting this balance.</h2>
-
-
+        {/* Present content */}
         <ul
           role="list"
           className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 sm:mt-20 lg:max-w-none lg:grid-cols-3"
@@ -95,5 +92,5 @@ It's important to note that old-growth forests have a unique ecological balance 
         </ul>
       </Container>
     </section>
-  )
+  );
 }
