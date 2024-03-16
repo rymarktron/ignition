@@ -568,12 +568,6 @@ export function PrimaryFeatures() {
           </p>
         </div>
       </Container>
-      <div className="mt-16 md:hidden">
-        <FeaturesMobile />
-      </div>
-      <Container className="hidden md:mt-20 md:block">
-        <FeaturesDesktop />
-      </Container>
     </section>
   );
 }
